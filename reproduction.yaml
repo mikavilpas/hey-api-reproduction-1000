@@ -1,0 +1,21 @@
+openapi: 3.0.0
+info:
+  title: reproduction
+  version: 1.13.0
+
+paths:
+  /v0/temporaryEmployment/search:
+    get:
+      operationId: searchTemporaryEmployments
+      tags:
+        - employment
+      parameters:
+        - $ref: '#/components/parameters/TemporaryEmploymentSearchLimitInQuery'
+
+components:
+  parameters:
+    TemporaryEmploymentSearchLimitInQuery:
+      name: limit
+      in: query
+      schema:
+        type: integer

@@ -1,0 +1,15 @@
+{
+  "include": ["./src"],
+  "compilerOptions": {
+    "types": [],
+    "outDir": "dist/",
+    "noEmit": false,
+    "declaration": true,
+    "rootDir": "src",
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Bundler",
+    "strictNullChecks": true,
+    "composite": true
+  }
+}
